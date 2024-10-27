@@ -1,0 +1,235 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    height: 80px; /* Adjust height for logo */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: #007bff;
+    border-radius: 5px;
+}
+
+/* Home Section */
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.home {
+    background-color: #f8f9fa;
+}
+
+.home h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.home button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.home button:hover {
+    background-color: #0056b3;
+}
+
+/* Attractions Section */
+.attractions {
+    background-color: #e9ecef;
+}
+
+.attractions h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.attraction-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for two items per row */
+    gap: 20px;
+}
+
+.attraction-item {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.attraction-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.attraction-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.attraction-item p {
+    font-size: 16px;
+}
+
+.attraction-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design: For smaller screens */
+@media screen and (max-width: 768px) {
+    .attraction-list {
+        grid-template-columns: 1fr; /* One column on small screens */
+    }
+}
+
+/* Culture & Heritage Section */
+.culture {
+    background-color: #e9ecef;
+    padding: 50px;
+}
+
+.culture h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.culture ul {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.culture ul li {
+    padding: 10px 0;
+}
+
+/* Plan Your Trip Section */
+.plan {
+    background-color: #e9ecef;
+    padding: 50px;
+}
+
+.plan h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.plan button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.plan button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Us Section */
+.contact {
+    background-color: #e9ecef;
+    padding: 50px;
+}
+
+.contact h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 15px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
